@@ -1,0 +1,149 @@
+body {
+    background-color: black;
+    text-align: center;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #07c5f9;
+    border: 3px solid black;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .cell.x {
+    color: #1e6ce3;
+    font-family: gamerspot;
+  }
+  
+  .cell.o {
+    color: #f28211;
+    font-family: gamerspot;
+  }
+  
+  @font-face {
+    font-family: "gamerspot";
+    src: url("gamerspot.ttf");
+  }
+
+  @font-face {
+    font-family: "Gameria";
+    src: url("GAMERIA.ttf");
+  }
+
+  @font-face {
+    font-family: "rosalia";
+    src: url("Rosalia.otf");
+  }
+
+
+  h1{
+    font-family: Gameria;
+    text-align: center;
+    color: #f28211;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px aliceblue;
+    }
+
+h2{
+  font-family: Gameria;
+  text-align: center;
+  color: #07c5f9 ;
+  font-size: 30px;
+}
+
+
+button {
+    color: aliceblue;
+    background-color: #1e6ce3;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: Gameria; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  button:hover {
+    background-color: #f28211;
+    color:aliceblue;
+    box-shadow: 0px 2px 5px #ffffff;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+
+  #result {
+    font-family: Gameria; 
+    font-size: 27px; 
+    color: #07c5f9; 
+  }
+  .back-button {
+    margin-right: 10px;
+    text-align: center;
+  }
+  
+  .play-button {
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  .custom-p {
+    font-family: Gameria;
+    font-size: 14px;
+    color: #1e6ce3;
+    margin-top: 10px;
+  }
+
+  .regresarbutton {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  
+  #regresar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+
+  /* #AgregarJugador button {
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+
+ 
+  
+
+
+  /* #users p.user {
+    display: inline;
+}
+
+    Agrega separación superior e inferior entre los botones
+#btn-add-user,
+#player-form button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.user-list li {
+    display: inline-block; /* Mostrar los elementos de la lista en línea */
+    /* margin-right: 5px; /* Agregar un espacio entre los botones */

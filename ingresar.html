@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>3 en línea</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyC3h0BgSXG5W0lruFmcPeuKCcy-wCcyu0k",
+            authDomain: "gato-ram.firebaseapp.com",
+            projectId: "gato-ram",
+            storageBucket: "gato-ram.appspot.com",
+            messagingSenderId: "182097461639",
+            appId: "1:182097461639:web:5af848d15ed97ebef8d322",
+            measurementId: "G-D465MC7NFQ"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+    </script>
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1>
+
+    <div id="playerButtonsContainer">
+        <h2>Lista de los jugadores</h2>
+
+        <form id="AgregarJugador">
+            <input type="text" id="UserInput" placeholder="Nombre">
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 en línea</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyC3h0BgSXG5W0lruFmcPeuKCcy-wCcyu0k",
+            authDomain: "gato-ram.firebaseapp.com",
+            projectId: "gato-ram",
+            storageBucket: "gato-ram.appspot.com",
+            messagingSenderId: "182097461639",
+            appId: "1:182097461639:web:5af848d15ed97ebef8d322",
+            measurementId: "G-D465MC7NFQ"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        console.log(db);
+
+    </script>
+
+
+</head>
+
+<body>
+    <h1>3 en línea</h1>
+
+    <a href="./ingresar.html">
+        <div id="regresar">
+            <button>Regresar</button>
+        </div>
+    </a>
+
+    <div id="board">
+        <div class="cell" onclick="makeMove(0)"></div>
+        <div class="cell" onclick="makeMove(1)"></div>
+        <div class="cell" onclick="makeMove(2)"></div>
+        <div class="cell" onclick="makeMove(3)"></div>
+        <div class="cell" onclick="makeMove(4)"></div>
+        <div class="cell" onclick="makeMove(5)"></div>
+        <div class="cell" onclick="makeMove(6)"></div>
+        <div class="cell" onclick="makeMove(7)"></div>
+        <div class="cell" onclick="makeMove(8)"></div>
+    </div>
+    <p id="result"></p>
+    <button onclick="resetGame()">Reiniciar</button>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
